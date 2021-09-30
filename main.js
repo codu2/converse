@@ -18,10 +18,10 @@ prevSlide = () => slide_index = slide_index - 1 < 0 ? slides.length - 1 : slide_
 
 /*
 document.querySelector('.slider').addEventListener('mouseover', () => {
-    slide_play = true;
+    slide_play = false;
 })
 document.querySelector('.slider').addEventListener('mouseleave', () => {
-    slide_play = false;
+    slide_play = true;
 })
 */
 
