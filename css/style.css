@@ -731,6 +731,227 @@ footer ul li {
   padding-right: 30px;
 }
 
+.breadcumb {
+  font-weight: 600;
+  padding-left: 20px;
+  font-family: "Poppins";
+}
+
+.breadcumb a {
+  text-transform: capitalize;
+}
+
+.breadcumb span {
+  padding: 0 20px;
+}
+
+.filter-header {
+  display: block;
+  margin: 20px 0;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.filter-list > li {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.filter-toggle-box {
+  display: none;
+}
+
+.price-range {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-range span {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0 7px;
+}
+
+.price-range input {
+  width: 40%;
+  height: 23px;
+  outline: none;
+  padding: 5px;
+}
+
+.group-checkbox {
+  text-align: left;
+}
+
+.group-checkbox input {
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.group-checkbox label {
+  cursor: pointer;
+  padding-left: 30px;
+  position: relative;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.group-checkbox label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--bg2-color);
+  border: 2px solid var(--bg3-color);
+}
+
+.group-checkbox label > i {
+  position: absolute;
+  left: 2px;
+  top: 0px;
+  color: #000;
+  transform: scale(0);
+  font-size: 14px;
+  transition: transform 0.1s ease-in-out;
+}
+
+.group-checkbox input:checked + label i {
+  transform: scale(1);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.pagination > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33px;
+  height: 33px;
+  margin-left: 5px;
+  font-size: 17px;
+}
+
+.pagination > li > a.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.pagination > li > a:hover {
+  border: 2px solid #000;
+}
+
+table,
+td {
+  border: 1px solid var(--bg1-color);
+  border-collapse: collapse;
+  empty-cells: hide;
+}
+
+td {
+  padding: 10px 7px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+td:hover {
+  background-color: var(--bg2-color);
+}
+
+td.active {
+  background-color: var(--bg1-color);
+}
+
+.color-list {
+  display: flex;
+  width: 200px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.color-list > li {
+  margin: 0;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--bg2-color);
+  cursor: pointer;
+  transition: transform 0.2s linear;
+}
+
+.circle:hover {
+  transform: scale(1.2);
+}
+
+.circle.black {
+  background-color: #000;
+}
+
+.circle.blue {
+  background-color: blue;
+}
+
+.circle.green {
+  background-color: green;
+}
+
+.circle.navy {
+  background-color: navy;
+}
+
+.circle.purple {
+  background-color: purple;
+}
+
+.circle.brown {
+  background-color: #6b3e2e;
+}
+
+.circle.grey {
+  background-color: grey;
+}
+
+.circle.khaki {
+  background-color: #7e805d;
+}
+
+.circle.beige {
+  background-color: navy;
+}
+
+.circle.red {
+  background-color: purple;
+}
+
+.circle.orange {
+  background-color: brown;
+}
+
+.circle.pink {
+  background-color: pink;
+}
+
+.circle.yellow {
+  background-color: yellow;
+}
+
+.circle.white {
+  background-color: #000;
+}
+
 @media only screen and (max-width: 992px) {
   .mobile-menu {
     display: flex;
@@ -902,13 +1123,14 @@ footer ul li {
   .filter-col {
     position: fixed;
     width: 100%;
-    background-color: var(--main-bg-color);
+    background-color: #fff;
     z-index: 98;
     left: 100%;
     height: 80vh;
     overflow-y: scroll;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: left 0.2s ease-in-out;
+    padding-bottom: 35px;
   }
 
   .filter-col.active {
