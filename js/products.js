@@ -111,7 +111,7 @@ let products_img = document.querySelectorAll('.product-card-img > img');
 if(window.innerWidth < 750) {
     products_div.forEach(e => {
         let classes = e.classList;
-        classes.replace('col-4', 'col-3');
+        classes.replace('col-5', 'col-6');
         classes.replace('col-md-6', 'col-md-12');
     })
 }
