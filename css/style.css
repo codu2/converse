@@ -1143,6 +1143,114 @@ td.active {
   font-size: 14px;
 }
 
+.log-in .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - (var(--top-header-size) + var(--mid-header-size)));
+}
+
+.log-in .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(100, 100, 111, 0.2);
+}
+
+.login-header {
+  margin: 20px 0 30px 0;
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.sign-input {
+  margin-bottom: 10px;
+}
+
+.sign-input input {
+  display: block;
+  width: 400px;
+  height: 45px;
+  border: 1px solid rgba(100, 100, 111, 0.2);
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  outline: none;
+}
+
+.box-top {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.box-top input {
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.box-top label {
+  position: relative;
+  font-size: 14px;
+  padding-left: 25px;
+}
+
+.box-top a {
+  font-size: 14px;
+  text-decoration: underline;
+  position: absolute;
+  right: 0;
+}
+
+.box-top label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(100, 100, 111, 0.2);
+}
+
+.box-mid {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.box-mid i {
+  margin-right: 5px;
+}
+
+.box-mid .btn-flat {
+  margin-bottom: 5px;
+  width: 400px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.box-bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.box-top a:hover,
+.box-bottom a:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
 @media only screen and (max-width: 992px) {
   .mobile-menu {
     display: flex;
@@ -1296,10 +1404,6 @@ td.active {
     transform: translateY(-20px);
     position: relative;
     margin-bottom: 0px;
-  }
-
-  .sp-item-info {
-    padding-right: 35px;
   }
 
   .blog {
