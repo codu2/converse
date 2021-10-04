@@ -108,7 +108,7 @@ document.querySelector('#filter-close').addEventListener('click', () => {
 let products_div = document.querySelectorAll('#products > div');
 let products_img = document.querySelectorAll('.product-card-img > img');
 
-if(window.innerWidth < 750) {
+if(window.innerWidth < 992) {
     products_div.forEach(e => {
         let classes = e.classList;
         classes.replace('col-5', 'col-6');
