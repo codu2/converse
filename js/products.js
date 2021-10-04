@@ -104,3 +104,14 @@ document.querySelector('#filter-toggle').addEventListener('click', () => {
 document.querySelector('#filter-close').addEventListener('click', () => {
     filter_col.classList.toggle('active');
 })
+
+let products_div = document.querySelectorAll('#products > div');
+let products_img = document.querySelectorAll('.product-card-img > img');
+
+if(window.innerWidth < 750) {
+    products_div.forEach(e => {
+        let classes = e.classList;
+        classes.replace('col-4', 'col-3');
+        classes.replace('col-md-6', 'col-md-12');
+    })
+}
