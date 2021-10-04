@@ -1475,4 +1475,8 @@ td.active {
   .promotion-box {
     height: unset;
   }
+  
+  #products > div {
+    width: 100%;
+  }
 }
